@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Offline Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div></div>
+    <div id="floating-panel">
+        <input onclick="clearMarkers();" type="button" value="Hide Markers" />
+        <input onclick="showMarkers();" type="button" value="Show All Markers" />
+        <input onclick="deleteMarkers();" type="button" value="Delete Markers" />
+        <input onclick="openNav()" type="button" value="☰ Open Sidebar">
+        <input onclick="closeNav()" type="button" value="☰ Close Sidebar">
+        <div id="total-length"></div>
+    </div>
+    <div id="mymap"></div>
+    <div id="mySidebar" class="sidebar">
+        <h2>MARKERS</h2>
+        <div id="markers">
+        </div>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
