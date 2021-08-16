@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
 
+<head>
+  <title>Maps API</title>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmup6Z1hm02HheL1Y7UHxQeaTiFyt3--0&libraries=drawing&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="mySidebar" class="sidebar">
+    <h2>MARKERS</h2>
+    <div id="markers"></div>
+  </div>
+  <div id="floating-panel">
+    <input onclick = "clearMarkers();"  type="button" value="Hide Markers" />
+    <input onclick = "showMarkers();"   type="button" value="Show All Markers" />
+    <input onclick = "deleteMarkers();" type="button" value="Delete Markers" />
+    <input onclick = "openNav()"        type="button" value="☰ Open Sidebar">
+    <input onclick = "closeNav()"       type="button" value="☰ Close Sidebar">
+    <div   id="total-length"></div>
+  </div>
+</body>
+</html>
